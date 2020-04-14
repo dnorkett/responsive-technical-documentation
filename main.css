@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Nunito";
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:visited {
+    color:black; 
+}
+
+#navbar {    
+    border-right: 3px solid rgb(151, 151, 151);       
+    position: fixed;
+    height: 100%;
+    min-width: 300px;
+    width: 300px;
+    top: 0px;
+    left: 0px;   
+}
+
+#navbar > header {
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#navbar > ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar > ul > li {
+    list-style-type: none;
+    padding-left: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid black;
+    width: 100%
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+section > header {    
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+code {
+    background-color: rgb(223, 223, 223, .4);
+    margin-left: 30px;
+    padding: 10px;    
+    font-size: .8rem;
+    display: block;
+}
+
+article > ul > li {
+    margin-bottom: 10px;
+}
+  
+@media only screen and (max-width: 550px) {
+   #navbar {
+        display: none;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}  
